@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+    <link rel="stylesheet" href="muziek.css">
+</head>
+<body>
+<h1>Zoek een album op nummer:</h1>
+<input id="albumId" type="number" min="1" required autofocus>
+<span id="albumIdFout" class="fout">Verplicht</span>
+<span id="nietGevonden" class="fout">We vonden geen album met dit nummer</span>
+<button id="zoeken">Zoek album</button>
+
+<div id="detail">
+    <h2>Details:</h2>
+    <dl>
+        <dt>Naam:</dt>
+        <dd id="naam"></dd>
+        <dt>Artiest</dt>
+        <dd id="artiest"></dd>
+        <dt>Tracks:</dt>
+        <dt>
+            <span id="trackFout" class="fout">We vonden geen tracks voor dit album.</span>
+            <ol id="tracks">
+
+            </ol>
+        </dt>
+    </dl>
+</div>
+</body>
+</html>
